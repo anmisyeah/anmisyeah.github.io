@@ -1,0 +1,168 @@
+.divHead {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    gap: 250px;
+}
+
+.popup_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 600px;
+    padding: 15px;
+}
+
+.popup.active{
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.8s all;
+}
+
+.close_img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 30px;
+}
+
+.popup_bg.active{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.show_more {
+    cursor: pointer;
+    color:deepskyblue;
+    font-style: italic;
+}
+
+.pWelcome {
+    font-size: 32px;
+    font-weight: bold;
+    align-items: center;
+    color: brown;
+}
+
+.catalog {
+    display:flex;
+}
+
+.discription {
+    margin-left: 25px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+.add_button {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 4px solid #e7e7e7;
+    border-radius: 15px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+.add_button:hover {
+    background-color: #e7e7e7;
+}
+
+.more_info {
+    display: flex;
+    gap:10px;
+}
+
+.book_shop {
+    font-weight: bold;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.books_container {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width:50%;
+}
+
+.main_container {
+    display: flex;
+}
+
+.order_books {
+    width: 50%;
+    border-left: 2px solid black;
+}
+
+.first_order {
+    display: none;
+    position: relative;
+}
+
+.first_order.active {
+    display: flex;
+    position: relative;
+    width: 450px;
+}
+
+.order_img_1 {
+    width: 200px;
+}
+
+.close_order_img {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+}
+
+.confirm_order {
+    display:none;
+}
+
+.confirm_order.active {
+    display:block;
+}
+
+.order_hide {
+    display: none;
+}
+
+.result {
+    pointer-events: none;
+}
+
+.confirm_button {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 4px solid #e7e7e7;
+    border-radius: 15px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+.confirm_button:hover{
+    background-color: #e7e7e7;
+}
+
+.hide {
+    display: none;
+}
