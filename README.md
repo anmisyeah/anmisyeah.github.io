@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
             <link href="bookshop.css" rel="stylesheet" type="text/css">
