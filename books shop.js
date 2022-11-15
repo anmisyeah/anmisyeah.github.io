@@ -3,7 +3,7 @@ let divHead = document.createElement('div');
     divHead.classList.add('divHead');
 
     let myImg = document.createElement('img');
-    myImg.setAttribute('src', 'bookshopImg.jpg');
+    myImg.setAttribute('src', 'bookShopImg.jpg');
     divHead.appendChild(myImg);
 
     let pWelcome = document.createElement('p');
